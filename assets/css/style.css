@@ -18,7 +18,7 @@
   src: url(../Font/OpenSansCondensed-Bold.ttf);
 }
 
-*{
+* {
   font-family: 'open sans', sans-serif;
 }
 
@@ -28,6 +28,7 @@ html {
 
 
 body{
+  font-family: 'open sans', sans-serif;
   background-color: var(--meddark);
 }
 
@@ -259,7 +260,7 @@ nav a:hover{
 .contact-footer{
   background-color: var(--light);
   color: var(--dark);
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: 'open sans bold', sans-serif;
 }
 
@@ -282,6 +283,9 @@ nav a:hover{
 /* larger phones */
 @media screen and (min-width: 415px)
     {
+      .contact-footer{
+        font-size: 3rem;
+      }
       .contact-links{
         font-size: 3rem;
       }
