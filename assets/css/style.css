@@ -1,3 +1,5 @@
+/* help with getting my font in order as well as extending the footer container at the bottom and extending the padding on just the word 'contact' in larger screen sizes. Also help with flex x x y%. Box shadow under 'About Me' also not working */
+
 :root{
     --dark: #1A374D;
     --dark-opq: rgb(26 55 77 0.3);
@@ -39,7 +41,7 @@ body{
 
 nav{
       display: flex;
-      font-size: 3rem;
+      font-size: 2rem;
       background-color: var(--dark);
       color: var(--light);
   }
@@ -250,11 +252,10 @@ nav a:hover{
 }
 
 .contact-left{
-  background-color: var(--dark);
-  color: var(--light);
   height: fit-content;
-  flex: 1 0 80%;
+  flex: 1 0 0%;
   position: relative;
+  /* display: inline-block; */
 }
 
 .contact-footer{
@@ -265,27 +266,40 @@ nav a:hover{
 }
 
 .contact-links{
-  display: inline-block;
-  flex-wrap: wrap;
-  font-size: 2.2rem;
+  font-size: 2rem;
   justify-content: space-evenly;
   position: absolute;
-  right: 10%;
-  padding: 0.5rem 9;
+  right: 2%;
+  padding: 0.5rem 0 0 4rem;
+  background-color: var(--light);
 }
+
+.contact-links li{
+    display: inline-block;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: var(--dark);
+    padding: 0.8rem 0rem;
+}
+
 
 .contact-links a{
   text-decoration: none;
   color: var(--dark);
-  padding: 1rem 0.8rem;
+  padding: 1rem 0.3rem;
 }
 
 /* larger phones */
 @media screen and (min-width: 415px)
     {
+      nav{
+        font-size: 2.4rem;
+    }
+
       .contact-footer{
         font-size: 3rem;
       }
+
       .contact-links{
         font-size: 3rem;
       }
@@ -342,6 +356,14 @@ nav a:hover{
       }
 
       .contact-left{
-        text-align: center;
+        text-align: right;
+      }
+
+      .contact-footer{
+        padding: 0 10rem;
+      }
+
+      .contact-links{
+        background-color: var(--light);
       }
     }
