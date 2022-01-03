@@ -249,6 +249,7 @@ nav a:hover{
 .contact{
   display: flex;
   flex-flow: wrap;
+  /* background-color: var(--light); */
 }
 
 .contact-left{
@@ -263,6 +264,7 @@ nav a:hover{
   color: var(--dark);
   font-size: 2.2rem;
   font-family: 'open sans bold', sans-serif;
+  margin: 0 2rem 0 0;
 }
 
 .contact-links{
@@ -272,6 +274,7 @@ nav a:hover{
   right: 2%;
   padding: 0.5rem 0 0 4rem;
   background-color: var(--light);
+  border-radius: 0.3rem;
 }
 
 .contact-links li{
@@ -360,7 +363,7 @@ nav a:hover{
       }
 
       .contact-footer{
-        padding: 0 10rem;
+        margin: 0 5rem 0 0;
       }
 
       .contact-links{
