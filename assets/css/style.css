@@ -239,6 +239,7 @@ nav a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--medlight);
 }
 
 .contact a{
@@ -319,6 +320,10 @@ nav a:hover{
 
       .card-title{
         font-size: 3rem;
+      }
+
+      .card-img{
+        height: 7rem;
       }
 
     }
